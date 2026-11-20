@@ -1,0 +1,3 @@
+{
+  "name": "calculadora-digital", "integrations": { "capacitor": {} }, "type": "angular"
+}

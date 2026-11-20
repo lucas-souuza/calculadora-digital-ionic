@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="brand"><div class="brand-icon"><ion-icon name="calculator-outline"></ion-icon></div><div><ion-title>Calculadora</ion-title><span>Simples. Clara. Prática.</span></div></div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <main class="page-wrap">
+    <section class="calculator" aria-label="Calculadora digital">
+      <div class="display-card"><span class="display-label">RESULTADO</span><div class="display-value" aria-live="polite">{{ display }}</div></div>
+      <div class="keypad">
+        <ion-grid><ion-row>
+          <ion-col size="6"><ion-button class="key key-clear" expand="block" (click)="press('AC')">AC</ion-button></ion-col>
+          <ion-col size="3"><ion-button class="key key-muted" expand="block" (click)="press('⌫')"><ion-icon name="backspace-outline"></ion-icon></ion-button></ion-col>
+          <ion-col size="3"><ion-button class="key key-op" expand="block" (click)="press('÷')">÷</ion-button></ion-col>
+        </ion-row><ion-row>
+          <ion-col size="3"><ion-button class="key" expand="block" (click)="press('7')">7</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('8')">8</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('9')">9</ion-button></ion-col><ion-col size="3"><ion-button class="key key-op" expand="block" (click)="press('×')">×</ion-button></ion-col>
+        </ion-row><ion-row>
+          <ion-col size="3"><ion-button class="key" expand="block" (click)="press('4')">4</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('5')">5</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('6')">6</ion-button></ion-col><ion-col size="3"><ion-button class="key key-op" expand="block" (click)="press('−')">−</ion-button></ion-col>
+        </ion-row><ion-row>
+          <ion-col size="3"><ion-button class="key" expand="block" (click)="press('1')">1</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('2')">2</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('3')">3</ion-button></ion-col><ion-col size="3"><ion-button class="key key-op" expand="block" (click)="press('+')">+</ion-button></ion-col>
+        </ion-row><ion-row>
+          <ion-col size="6"><ion-button class="key" expand="block" (click)="press('0')">0</ion-button></ion-col><ion-col size="3"><ion-button class="key" expand="block" (click)="press('.')">.</ion-button></ion-col><ion-col size="3"><ion-button class="key key-equals" expand="block" (click)="press('=')">=</ion-button></ion-col>
+        </ion-row></ion-grid>
+      </div>
+      <div class="hint"><span class="hint-dot"></span> Todas as operações em um só lugar</div>
+    </section>
+    <footer>FEITA PARA FACILITAR O SEU DIA</footer>
+  </main>
+</ion-content>

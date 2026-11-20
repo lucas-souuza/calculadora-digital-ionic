@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Builds e caches do Angular
+/www/
+/dist/
+/.angular/
+/coverage/
+
+# Arquivos locais e temporários
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
